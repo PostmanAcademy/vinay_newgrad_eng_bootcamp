@@ -1,20 +1,16 @@
 $kind: http-request
-url: '{{baseUrl}}/v1/users/:id'
+url: "{{baseUrl}}/v1/users/:id"
 method: DELETE
 headers:
-  - key: Accept
-    value: application/json
-  - key: X-API-Key
-    value: '{{apiKey}}'
+  Accept: application/json
+  X-API-Key: "{{apiKey}}"
 pathVariables:
-  - key: id
-    value: '{{userId}}'
+  id: "{{userId}}"
 body:
   type: text
-  content: ''
+  content: ""
 scripts:
   - type: afterResponse
-    language: text/javascript
     code: |-
       // Test 1: Status code is 200 OK
       pm.test("Status code is 200 OK", function () {
@@ -49,5 +45,6 @@ scripts:
           pm.collectionVariables.unset("userId");
           pm.collectionVariables.unset("authToken");
       }
-examples: './.resources/Delete a user.resources/examples'
-order: 3000
+    language: text/javascript
+examples: ./.resources/Delete a user.resources/examples
+order: 2000
