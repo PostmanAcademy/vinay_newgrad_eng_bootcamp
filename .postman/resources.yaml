@@ -1,0 +1,12 @@
+workspace:
+  id: 94df3e0c-31d6-403b-94cb-7b11e539e2f2
+localResources:
+  specs:
+    - ../contract/index.yaml
+cloudResources:
+  collections:
+    ../postman/collections/UserAPI - Integration Test Suite: 55929785-1916793c-a1bd-4c49-8691-905c211a0558
+  environments:
+    ../postman/environments/Demo Env.environment.yaml: 55929785-7b2c6044-33b4-42e5-9b9d-4112ffb7cbe1
+  specs:
+    ../contract/index.yaml: c1c4765c-e718-40cf-9cf0-fca83e3859bb

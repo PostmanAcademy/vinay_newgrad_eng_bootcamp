@@ -1,0 +1,15 @@
+owner: "55929785"
+team: "18160021"
+lastUpdatedBy: "55929785"
+lastRevision: 1781856341000
+name: Demo Env
+color: 120
+values:
+  - key: baseUrl
+    value: https://customer-education.postmanlabs.com
+    enabled: true
+  - key: apiKey
+    value: "1234"
+    enabled: true
+createdAt: 2026-06-19T08:05:40.000Z
+updatedAt: 2026-06-19T08:05:41.000Z
